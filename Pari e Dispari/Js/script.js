@@ -16,7 +16,7 @@ console.log('pc - ' + pcNumber);
 const sumNumber = userNumber + pcNumber;
 console.log('somma - ' + sumNumber);
 //Creo una funzione che stabilisca se la somma è pari o dispari
-function isEvenOrOdd (num1, num2, sum) {
+function isEvenOrOdd (sum) {
     if (sum % 2 === 0) {
         sum = 'Pari';
     } else {
@@ -24,10 +24,8 @@ function isEvenOrOdd (num1, num2, sum) {
     }
     return sum;
 }
-isEvenOrOdd (userNumber, pcNumber, sumNumber);
-console.log(isEvenOrOdd);
-let userMessage;
-isEvenOrOdd = userMessage;
+let userMessage = isEvenOrOdd (sumNumber);
+console.log(userMessage);
 //Dichiaro chi ha vinto
 if (userMessage === userEvenOrOdd) {
     alert('Hai vinto!');
